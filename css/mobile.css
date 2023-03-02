@@ -19,11 +19,6 @@ body{
     display: flex;
 }
 
-.list:last-child{
-    margin-right: 0;
-    margin-bottom: 0;
-}
-
 .link{
     text-decoration: none;
 }
@@ -39,12 +34,6 @@ body{
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-
-img{
-    display: block;
-    max-width: 100%;
-    height: auto;
 }
 
 .img{
@@ -63,7 +52,7 @@ img{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    letter-spacing: 0,02em;
+    letter-spacing: 0.02em;
     color: var(--special-text);
 }
 
@@ -71,9 +60,9 @@ img{
     text-align: center;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.20;
     letter-spacing: 0.02em;
     color: var(--special-text);
     margin-bottom: 8px;
@@ -82,7 +71,7 @@ img{
 .parag{
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -248,6 +237,7 @@ img{
 
 .first{
     padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .first-list{
@@ -261,14 +251,7 @@ img{
 }
 
 .first-wrap-svg{
-    height: 112px;
-    width: 264px;
-    background: #F4F4FD;
-    border-radius: 4px;
     display: none;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8px;
 }
 
 .first-svg{
@@ -279,27 +262,29 @@ img{
 /* ------------------------------------------------SECOND------------------------------------------ */
 
 .second{
-    padding: 120px 0;
+    display: none;
 }
-
-.second-title{
-    text-align: center;
-    margin-bottom: 72px;
-}
-
-.second-list{
-    gap: 24px;
-}
-
 /* ------------------------------------------------TEAM------------------------------------------ */
 
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .team{
-    padding: 120px 0;
+    padding-top: 96px;
+    padding-bottom: 128px;
     background-color: #f4f4fd;
 }
 
 .team-list{
-    gap: 24px;
+    margin-top: 72px;
+    gap : 72px;
+    width: 264px;
+    display: flex;
+    flex-direction: column;
 }
 
 .team-list-item{
@@ -311,6 +296,12 @@ img{
 .photo-text{
     text-align: center;
     padding: 32px 16px;
+
+}
+
+.team-social-list{
+    margin-top: 8px;
+    gap: 24px;
 }
 
 .team-social-list-item{
@@ -318,11 +309,6 @@ img{
     height: 40px;
     background: #4D5AE5;
     border-radius: 50%; 
-}
-
-.team-social-list{
-    margin-top: 8px;
-    gap: 24px;
 }
 
 .social-link:hover, .social-link:focus {
@@ -337,15 +323,17 @@ img{
 /* ------------------------------------------------CUSTOMERS------------------------------------------ */
 
 .customers{
-    padding: 120px 0;
+    padding: 96px 0 96px;
 }
 
 .customers-list{
-    gap: 24px;
+    margin-top: 72px;
+    gap: 72px 16px;
+    flex-wrap: wrap;
 }
 
 .customers-list-item{
-    width: 168px;
+    width: 190px;
     height: 88px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
@@ -375,7 +363,7 @@ img{
 }
 
 .customers-svg{
-    width: 104px;
+    width: 110px;
     height: 56px;
     fill: #8E8F99;
     transition-property: fill;
@@ -494,7 +482,7 @@ img{
 
 .footer{
     background-color: var(--special-text);
-    padding: 100px 0;
+    padding: 96px 0;
 }
 
 .flex{
@@ -513,7 +501,6 @@ img{
 
 .footer-social{
     color: #ffffff;
-    margin-left: 120px;
 }
 
 .third-title{
@@ -527,6 +514,7 @@ img{
 }
 
 .footer-social-list{
+    margin-top: 72px;
     gap: 16px;
 }
 
@@ -573,7 +561,7 @@ img{
 .subscribe-form{
     display: flex;
     flex-direction: column;
-    margin-left: auto;
+    margin-top: 72px;
 }
 
 .subscribe-title{
