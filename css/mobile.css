@@ -97,6 +97,29 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 24px 16px;
+}
+
+.logo{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.web{
+    color: #4d5ae5;
+}
+
+.header-studio{
+    color: var(--special-text);
+}
+
+.hamburger-menu{
+    background-image: url(../images/ham-menu.svg);
+    width: 32px;
+    height: 22px;
 }
 
 .nav{
@@ -106,7 +129,7 @@ body{
 }
 
 .nav-list{
-    display: flex;
+    display: none;
     gap: 10px;
 }
 
@@ -148,24 +171,8 @@ body{
     background-color: var(--hover-active);
 }
 
-.logo{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.4;
-}
-
-.web{
-    color: #4d5ae5;
-}
-
-.header-studio{
-    color: var(--special-text);
-}
-
 .address-list{
-    display: flex;
+    display: none;
     gap: 40px;
 }
 
@@ -185,13 +192,17 @@ body{
     color: var(--hover-active);
 }
 
+/* ------------------------------------------------HEADER MENU------------------------------------------ */
+
+
+
 /* ------------------------------------------------HERO------------------------------------------ */
 
 .hero {
     text-align: center;
-    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mini-office-img.jpg);
     background-repeat: no-repeat;
-    background-size: 1440px;
+    background-size: 428px;
     background-position: 50% 50%;
     padding: 112px 0;
 }
@@ -330,6 +341,7 @@ body{
     margin-top: 72px;
     gap: 72px 16px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .customers-list-item{
@@ -500,6 +512,7 @@ body{
 }
 
 .footer-social{
+    margin-top: 72px;
     color: #ffffff;
 }
 
@@ -514,7 +527,6 @@ body{
 }
 
 .footer-social-list{
-    margin-top: 72px;
     gap: 16px;
 }
 
@@ -576,7 +588,7 @@ body{
 }
 
 .subscribe-input{
-    width: 264px;
+    width: 396px;
     height: 40px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     color: #FFFFFF;
@@ -584,6 +596,10 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     padding: 8px 16px;
+}
+
+.subscribe-input:focus, .subscribe-input:hover{
+    border: 1px solid #4D5AE5;
 }
 
 .subscribe-input::placeholder{
@@ -594,7 +610,6 @@ body{
     line-height: 1.2;
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.6);
-    
 }
 
 .subscribe-btn{
@@ -620,7 +635,7 @@ body{
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    margin-left: 24px;
+    margin-top: 16px;
 }
 
 .subscribe-btn:hover, .subscribe-btn:focus{
@@ -660,7 +675,7 @@ body{
     top: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
-    width: 408px;
+    width: 392px;
     min-height: 576px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -670,7 +685,7 @@ body{
 .modal-close_btn{
     position: relative;
     top: 24px;
-    left: 360px;
+    left: 344px;
     width: 24px;
     height: 24px;
     display: flex;
