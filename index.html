@@ -22,16 +22,14 @@
 
             <nav class="nav">
                 <a href="./index.html" class="logo link"><span class="web">WEB</span><span class="header-studio">STUDIO</span></a>
+
                 <ul class="nav-list list">
                     <li class="nav-list-item"><a href="./index.html" class="nav-link link "><span class="active">Studio</span></a></li>
                     <li class="nav-list-item"><a href="./portfolio.html" class="nav-link link">Portfolio</a></li>
                     <li class="nav-list-item"><a href="./index.html" class="nav-link link">Contacts</a></li>
                 </ul>
-                <a href="hamburger-menu">
-                    <svg class="hamburger-menu">
-                        <use></use>
-                    </svg>
-                </a>
+
+                <button class="hamburger-menu" type="button" mobile-btn-open-menu></button>
             </nav>
     
             <address class="address">
@@ -40,7 +38,62 @@
                     <li class="address-list-item"><a href="tel:+110001111111" class="address-link link">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+        </div>
 
+        <div class="backdrop is-hidden" mobile-menu>
+            <div class="mobile-menu">
+                <button type="button" class="mobile-menu-close" mobile-btn-close-menu>
+                    <svg class="modal-icon">
+                        <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+                    </svg>
+                </button>
+
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav-list list">
+                        <li class="mobile-nav-list-item"><a href="./index.html" class="nav-link link "><span class="active">Studio</span></a></li>
+                        <li class="mobile-nav-list-item"><a href="./portfolio.html" class="nav-link link">Portfolio</a></li>
+                        <li class="mobile-nav-list-item"><a href="./index.html" class="nav-link link">Contacts</a></li>
+                    </ul>
+                </nav>
+
+                <address class="mobile-address">
+                    <ul class="mobile-address-list list">
+                        <li class="mobile-address-list-item"><a href="mailto:info@devstudio.com" class="address-link link"><span class="address-hover">info@devstudio.com</span></a></li>
+                        <li class="mobile-address-list-item"><a href="tel:+110001111111" class="address-link link">+11 (000) 111-11-11</a></li>
+                    </ul>
+                </address>
+
+                <ul class="mobile-social-list list">
+                    <li class="mobile-social-list-item">
+                        <a href="" class="social-link">
+                            <svg class="mobile-svg">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-social-list-item">
+                        <a href="" class="social-link">
+                            <svg class="mobile-svg">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-social-list-item">
+                        <a href="" class="social-link">
+                            <svg class="mobile-svg">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-social-list-item">
+                        <a href="" class="social-link">
+                            <svg class="mobile-svg">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     
@@ -461,5 +514,6 @@
     </div>
     
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

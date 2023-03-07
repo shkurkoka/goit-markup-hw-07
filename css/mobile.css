@@ -120,6 +120,8 @@ body{
     background-image: url(../images/ham-menu.svg);
     width: 32px;
     height: 22px;
+    border: none;
+    cursor: pointer;
 }
 
 .nav{
@@ -194,7 +196,49 @@ body{
 
 /* ------------------------------------------------HEADER MENU------------------------------------------ */
 
+.mobile-menu {
+    position: absolute;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    width: 428px;
+    min-height: 576px;
+    background: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
+.mobile-menu-close {
+    position: relative;
+    top: 40px;
+    left: 364px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-close:active,
+.mobile-menu-close:focus,
+.mobile-menu-close:hover {
+    background-color: var(--hover-active);
+}
+
+.mobile-menu-close:active .modal-icon,
+.mobile-menu-close:focus .modal-icon,
+.mobile-menu-close:hover .modal-icon {
+    fill: #FFFFFF;
+}
 
 /* ------------------------------------------------HERO------------------------------------------ */
 
