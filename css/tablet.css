@@ -121,6 +121,14 @@
         padding-top: 112px;
         padding-bottom: 108px;
     }
+    
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-office-2x.jpg);
+        }
+    }
 
     .main-title {
         font-size: 56px;
