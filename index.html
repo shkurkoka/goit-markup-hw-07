@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/mini-mobile.css">
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/tablet.css">
     <link rel="stylesheet" href="./css/desktop.css">
@@ -42,57 +43,59 @@
 
         <div class="backdrop is-hidden" mobile-menu>
             <div class="mobile-menu">
-                <button type="button" class="mobile-menu-close" mobile-btn-close-menu>
-                    <svg class="modal-icon">
-                        <use href="./images/symbol-defs.svg#icon-close-btn"></use>
-                    </svg>
-                </button>
-
-                <nav class="mobile-nav">
-                    <ul class="mobile-nav-list list">
-                        <li class="mobile-nav-list-item"><a href="./index.html" class="mobile-nav-link link">Studio</a></li>
-                        <li class="mobile-nav-list-item"><a href="./portfolio.html" class="mobile-nav-link link">Portfolio</a></li>
-                        <li class="mobile-nav-list-item"><a href="./index.html" class="mobile-nav-link link ">Contacts</a></li>
+                <div class="menu-content-wrap">
+                    <button type="button" class="mobile-menu-close" mobile-btn-close-menu>
+                        <svg class="modal-icon">
+                            <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+                        </svg>
+                    </button>
+    
+                    <nav class="mobile-nav">
+                        <ul class="mobile-nav-list list">
+                            <li class="mobile-nav-list-item"><a href="./index.html" class="mobile-nav-link link">Studio</a></li>
+                            <li class="mobile-nav-list-item"><a href="./portfolio.html" class="mobile-nav-link link">Portfolio</a></li>
+                            <li class="mobile-nav-list-item"><a href="./index.html" class="mobile-nav-link link ">Contacts</a></li>
+                        </ul>
+                    </nav>
+    
+                    <address class="mobile-address">
+                        <ul class="mobile-address-list list">
+                            <li class="mobile-address-list-item"><a href="tel:+110001111111" class="mobile-address-link link">+11 (000) 111-11-11</a></li>
+                            <li class="mobile-address-list-item"><a href="mailto:info@devstudio.com" class="mobile-address-link link"><span class="address-hover">info@devstudio.com</span></a></li>
+                        </ul>
+                    </address>
+    
+                    <ul class="mobile-social-list list">
+                        <li class="mobile-social-list-item">
+                            <a href="" class="social-link">
+                                <svg class="mobile-svg">
+                                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-social-list-item">
+                            <a href="" class="social-link">
+                                <svg class="mobile-svg">
+                                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-social-list-item">
+                            <a href="" class="social-link">
+                                <svg class="mobile-svg">
+                                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-social-list-item">
+                            <a href="" class="social-link">
+                                <svg class="mobile-svg">
+                                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </nav>
-
-                <address class="mobile-address">
-                    <ul class="mobile-address-list list">
-                        <li class="mobile-address-list-item"><a href="tel:+110001111111" class="mobile-address-link link">+11 (000) 111-11-11</a></li>
-                        <li class="mobile-address-list-item"><a href="mailto:info@devstudio.com" class="mobile-address-link link"><span class="address-hover">info@devstudio.com</span></a></li>
-                    </ul>
-                </address>
-
-                <ul class="mobile-social-list list">
-                    <li class="mobile-social-list-item">
-                        <a href="" class="social-link">
-                            <svg class="mobile-svg">
-                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="mobile-social-list-item">
-                        <a href="" class="social-link">
-                            <svg class="mobile-svg">
-                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="mobile-social-list-item">
-                        <a href="" class="social-link">
-                            <svg class="mobile-svg">
-                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="mobile-social-list-item">
-                        <a href="" class="social-link">
-                            <svg class="mobile-svg">
-                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -404,63 +407,64 @@
 
     <footer class="footer">
         <div class="container column">
-    
-            <div class="text column">
-                <a href="./index.html" class="logo link"><span class="web">WEB</span><span class="footer-studio">STUDIO</span></a>
-            
-                <p class="parag footer-text">
-                    Increase the flow of customers and 
-                    sales for your business with digital 
-                    marketing & growth solutions.
-                </p>
-            </div>
-    
-            <div class="footer-social column">
-                <h3 class="third-title">Social media</h3>
-                <ul class="footer-social-list list">
-                    <li class="footer-social-list-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-svg">
-                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-list-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-svg">
-                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-list-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-svg">
-                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-list-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-svg">
-                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <form class="subscribe-form column" name="subscribe-form" autocomplete="on" novalidate action="">
-                <b class="subscribe-title">Subscribe</b>
-                <div class="flex column">
-                    <input class="subscribe-input" type="email" name="email" placeholder="E-mail" required>
-        
-                    <button class="subscribe-btn" type="submit"><span>Subscribe</span>
-                        <svg class="subscribe-icon">
-                            <use href="./images/symbol-defs.svg#icon-send"></use>
-                        </svg> 
-                    </button>
+            <div class="footer-content-wrap">
+                <div class="text column">
+                    <a href="./index.html" class="logo link"><span class="web">WEB</span><span class="footer-studio">STUDIO</span></a>
+                
+                    <p class="parag footer-text">
+                        Increase the flow of customers and 
+                        sales for your business with digital 
+                        marketing & growth solutions.
+                    </p>
                 </div>
-            </form>
+        
+                <div class="footer-social column">
+                    <h3 class="third-title">Social media</h3>
+                    <ul class="footer-social-list list">
+                        <li class="footer-social-list-item">
+                            <a href="" class="footer-social-link">
+                                <svg class="footer-svg">
+                                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-list-item">
+                            <a href="" class="footer-social-link">
+                                <svg class="footer-svg">
+                                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-list-item">
+                            <a href="" class="footer-social-link">
+                                <svg class="footer-svg">
+                                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-list-item">
+                            <a href="" class="footer-social-link">
+                                <svg class="footer-svg">
+                                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <form class="subscribe-form column" name="subscribe-form" autocomplete="on" novalidate action="">
+                    <b class="subscribe-title">Subscribe</b>
+                    <div class="flex column">
+                        <input class="subscribe-input" type="email" name="email" placeholder="E-mail" required>
+            
+                        <button class="subscribe-btn" type="submit"><span>Subscribe</span>
+                            <svg class="subscribe-icon">
+                                <use href="./images/symbol-defs.svg#icon-send"></use>
+                            </svg> 
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
 

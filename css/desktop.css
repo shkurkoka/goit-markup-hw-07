@@ -13,7 +13,7 @@
     .nav {
         display: flex;
         align-items: center;
-        gap: 61px;
+        margin: 0 auto;
     }
 
     .nav-list {
@@ -73,10 +73,15 @@
         color: var(--special-text);
     }
 
+    .address{
+        margin: 0 auto;
+    }
+
     .address-list {
+        width: 344px;
+        flex-direction: row;
         gap: 40px;
         padding: 0;
-        flex-direction: row;
     }
 
     .address-hover:active, .address-hover:hover, .address-hover:focus {
@@ -141,6 +146,7 @@
 
     .first {
         padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     .first-list {
@@ -186,13 +192,14 @@
         display: flex;
         padding-bottom: 120px;
     }
-
+    
     .second-title {
         text-align: center;
         margin-bottom: 72px;
     }
-
+    
     .second-list {
+        justify-content: center;
         gap: 24px;
     }
 
@@ -297,8 +304,13 @@
         flex-wrap: nowrap;
     }
 
+    .footer-content-wrap{
+        width: 1148px;
+        gap: 80px;
+    }
+
     .footer-social{
-        margin-left: 120px;
+        margin-left: 40px;
 
     }
 
