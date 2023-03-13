@@ -6,14 +6,13 @@
 
     .head {
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
 
     .nav {
         display: flex;
         align-items: center;
-        margin: 0 auto;
+        gap: 76px;
     }
 
     .nav-list {
@@ -74,7 +73,7 @@
     }
 
     .address{
-        margin: 0 auto;
+        margin-left: auto;
     }
 
     .address-list {
@@ -256,6 +255,7 @@
     }
 
     .customers-list {
+        width: 1128px;
         margin-top: 0;
         gap: 24px;
     }
